@@ -24,7 +24,7 @@ public class MLBParkResource {
 	private DBConnection dbConnection;
 
 
-	private MLBPark populateParkInformation(Document dataValue) {
+	private BADMLBPark populateParkInformation(Document dataValue) {
 		MLBPark thePark = new MLBPark();
 		thePark.setName(dataValue.get("name"));
 		thePark.setPosition(dataValue.get("coordinates"));
