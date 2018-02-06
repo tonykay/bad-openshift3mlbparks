@@ -1,3 +1,7 @@
+# NOTE!
+
+This application has bugs introduced for debugging purposes.
+
 # Sample application for OpenShift 3
 
 This sample application will create and deploy a Java EE application server as well as a MongoDB database.  The sample application will display a map and perform geospatial queries to populate the map with all Major League Baseball stadiums in the United States.
@@ -12,12 +16,12 @@ $ oc new-project mlbparks
 ````
 If your environment (all-in-one) has Wildfly, use this:
 `````
-$ oc create -f https://raw.githubusercontent.com/gshipley/openshift3mlbparks/master/mlbparks-template-wildfly.json
+$ oc create -f https://raw.githubusercontent.com/tonykay/openshift3mlbparks/master/mlbparks-template-wildfly.json
 $ oc new-app mlbparks-wildfly
 `````
 If your environment (Online 3, Dedicated, OSE) has EAP, use this:
 `````
-$ oc create -f https://raw.githubusercontent.com/gshipley/openshift3mlbparks/master/mlbparks-template-eap.json
+$ oc create -f https://raw.githubusercontent.com/tonykay/openshift3mlbparks/master/mlbparks-template-eap.json
 $ oc new-app mlbparks-eap
 ````
 ## Install template as cluster-admin for everyone to use
@@ -25,6 +29,6 @@ $ oc new-app mlbparks-eap
 Load the template with cluster-admin user:
 
 ````
-# oc create -f https://raw.githubusercontent.com/gshipley/openshift3mlbparks/master/mlbparks-template-wildfly.json -n openshift
+# oc create -f https://raw.githubusercontent.com/tonykay/openshift3mlbparks/master/mlbparks-template-wildfly.json -n openshift
 ````
 
